@@ -10,25 +10,20 @@
 }
 
 @font-face {
-    font-family: "punktype";
-    src: url("../assets/fonts/punktype.ttf");
-}
-
-@font-face {
     font-family: "Dirty_Play";
     src: url("../assets/fonts/Dirty_Play.ttf");
 }
 
 /* Safari 4.0 - 8.0 */
-@-webkit-keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-}
-
-@keyframes mymove {
-    from {left: 0px;}
-    to {left: 200px;}
-}
+// @-webkit-keyframes mymove {
+//     from {right: 0px;}
+//     to {right: 200px;}
+// }
+//
+// @keyframes mymove {
+//     from {right: 0px;}
+//     to {right: 200px;}
+// }
 
 
 $brand-color: #18B89D;
@@ -58,7 +53,7 @@ h1, h2, h3 {
 }
 
 h2 {
-  font-size: 30px;
+  font-size: 36px;
   color: $brand-secondary;
   font-family: $heading;
 }
@@ -81,13 +76,17 @@ header {
   left: 0;
   right: 0;
   z-index: 2;
-  height: 40px;
-  background-color: rgba(20, 20, 20, 0);
+  height: 80px;
+  background-color: white;
   transition: background-color 0.2s ease;
   &.opaque {
     background-color: rgba(20, 20, 20, 0.6);
   }
   nav {
+    float: left;
+      margin: 0;
+      overflow:hidden;
+      text-align: center;
     ul {
       list-style: none;
       padding: 0;
@@ -101,7 +100,7 @@ header {
           margin-left: 0;
         }
         &.menu {
-          color: $white;
+          color: black;
           cursor: pointer;
           display: none;
           font-size: 20px;
@@ -155,6 +154,45 @@ section {
 .heading-styles {
   text-transform: uppercase;
   letter-spacing: 2px;
+}
+
+.overview {
+  p{
+    line-height: 30px;
+    font-size: 18px;
+  }
+  img {
+    margin: 20px;
+    padding-left: 60px;
+  }
+}
+
+#overview-text {
+  margin-right: 20px;
+  padding-top: 40px;
+  text-align: center;
+  max-width: 80%;
+
+}
+
+#overview-image {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  margin-right: 60px;
+}
+
+#walks-image {
+  padding-top: 20px;
+  margin-bottom: 40px;
+  padding-left: 50px;
+  margin-right: 60px;
+}
+
+#logo {
+text-align: left;
+vertical-align: middle;
+
 }
 
 .project_title {
@@ -252,32 +290,33 @@ section {
 .parallax {
   height: 800px;
   width: 100%;
-  background-image: url("https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/hello_bw.jpg");
+  background-image: url('../assets/images/3_dogs_running.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
  }
 
- .contenta {
+ .walk {
   padding-top: 20px;
   // min-height: 70vh;
   background-color: $white;
-  color: $black;
+  color: $brand-color;
   text-align: right;
-  font-family: Dirty_Play;
+  // font-family: Dirty_Play;
+
   }
 
 
 .parallax1 {
   height: 700px;
   width: 100%;
-  background-image: url("https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/lightbulbs.jpg");
+  background-image: url("../assets/images/walk_in_fields.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
  }
 
- .content1 {
+ .boarding {
    text-align: center;
    height: 50%;
    p {
@@ -374,36 +413,60 @@ section {
 
 #hero {
   height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../assets/images/Rob_with_pals.jpg');
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  padding-top: 100px;
+  background-image: url('../assets/images/Rob_with_pals.jpg');
+  // background-position: 10px 100px;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  // position: relative;
+  // padding-top: 100px;
+  // padding-right: 100px;
+  margin: auto;
   h2 {
     font-size: 36px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    // position: absolute;
+    // top: 30%;
+    // left: 1300%;
+    // transform: translate(-50%, -50%);
     color: $white;
-  }
-}
-
-  #hero_phrase {
-    h2 {
-      font-family: Dirty_Play;
-      color: white;
-      font-size: 40px;
+    font-family: goldenratio_demo;
+      // color: white;
+      // font-size: 40px;
+      // padding-top: 10px;
+      margin-left: 55%;
+      // margin-bottom: 500px;
+      width: 500px;
+      height: 400px;
+      padding-top: 120px;
+      // margin-top: 180px;
+      // position: relative;
+      // -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+      // animation: mymove 5s;
+      // animation-fill-mode: forwards;
     }
-    width: 300px;
-    height: 400px;
-    padding-top: 100px;
-    margin-top: 180px;
-    position: relative;
-    -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
-    animation: mymove 5s;
-    animation-fill-mode: forwards;
   }
+  // img {
+  //   padding-top: -300px;
+  // }
+
+
+  // #hero_phrase {
+  //   h2 {
+  //     font-family: goldenratio_demo;
+  //     color: white;
+  //     font-size: 40px;
+  //     padding-top: 10px;
+  //     margin-left: 250%;
+  //     margin-bottom: 500px;
+  //   }
+  //   width: 300px;
+  //   height: 400px;
+  //   padding-top: 100px;
+  //   margin-top: 180px;
+  //   position: relative;
+  //   // -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
+  //   // animation: mymove 5s;
+  //   // animation-fill-mode: forwards;
+  // }
 
 
 #projects {
@@ -498,9 +561,9 @@ section {
 }
 
 
-#about {
-  padding-top: 60px;
-}
+// #walks {
+//   margin-top: 100px;
+// }
 
 #logos, #moreInfo {
   h2 {
