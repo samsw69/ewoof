@@ -108,12 +108,14 @@ section {
   text-transform: uppercase;
   letter-spacing: 2px; }
 
-.overview p {
-  line-height: 30px;
-  font-size: 18px; }
-.overview img {
-  margin: 20px;
-  padding-left: 60px; }
+.overview {
+  text-align: right; }
+  .overview p {
+    line-height: 30px;
+    font-size: 18px; }
+  .overview img {
+    margin: 20px;
+    padding-left: 60px; }
 
 #overview-text {
   margin-right: 20px;
@@ -127,11 +129,8 @@ section {
   padding-left: 50px;
   margin-right: 60px; }
 
-#walks-image {
-  padding-top: 20px;
-  margin-bottom: 40px;
-  padding-left: 50px;
-  margin-right: 60px; }
+.walks_text {
+  text-align: center; }
 
 #logo {
   text-align: left;
@@ -243,9 +242,8 @@ section {
       color: #AC1439; }
 
 .parallax2 {
-  height: 700px;
-  width: 100%;
-  background-image: url("https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/enormity.png");
+  height: 900px;
+  background-image: url("../assets/images/garden2.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -258,8 +256,7 @@ section {
     color: #AC1439;
     padding-top: 20px;
     color: #232425;
-    text-align: right;
-    font-family: Dirty_Play; }
+    font-family: goldenratio_demo; }
   .content2 p {
     color: #777; }
   .content2 div {
@@ -328,18 +325,17 @@ section {
     border-color: #18B89D;
     border-radius: 50px; }
 
-#beknow_info {
-  border: 1px #AC1439;
+#boarding {
   padding-top: 60px;
   margin-top: 80px; }
-  #beknow_info p {
+  #boarding p {
     font-size: 18px; }
-  #beknow_info h2 {
+  #boarding h2 {
     font-family: goldenratio_demo;
     color: #AC1439;
     padding-bottom: 20px;
     text-align: center; }
-  #beknow_info div {
+  #boarding div {
     background-color: #FFF; }
 
 #beknowin {

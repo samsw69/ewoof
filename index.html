@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Karla:400,700" rel="stylesheet"> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha/js/bootstrap.min.js"></script>
@@ -30,8 +30,8 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="#about">About eWoof</a></li>
                 <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#ovb">Overnight-Boarding</a></li>
-                <li><a href="#db">Day-Boarding</a></li>
+                <li><a href="#prices">Prices</a></li>
+                <li><a href="#boarding">Boarding</a></li>
                 <li><a href="#walks">Walks</a></li>
                 <li><a href="index.html">Home</a></li>
               </div>
@@ -42,49 +42,54 @@
     </header>
 
     <main>
-      <!-- <div class="container"> -->
-        <div id="hero">
-          <div class="row">
-            <h2>Dog Walking & Boarding Services...<br><br>for your <span style="color: #FABBC8">BEST BUDDY</span> when you can't be there!</h2>
-          </div>
-        <!-- </div> -->
-      </div>
-
-  <div class="row">
-    <div class="overview">
-      <div class="col-md-6">
-        <div id="overview-image">
-          <img src="./assets/images/dog-sofa.jpg" height="400px">
+      <div id="hero">
+        <div class="row">
+          <h2>Dog Walking & Boarding Services...<br><br>for your <span style="color: #FABBC8">BEST BUDDY</span> when you can't be there!</h2>
         </div>
       </div>
-      <div class="col-md-6">
-        <div id="overview-text">
-          <h2><span style="padding-top: 30px">eWoof</span></h2>
-          <p>eWoof is a family run business providing home from home services for your peace of mind.</p><br>
-          <p>With busy working lives and commitments we all need a helping hand.<br>If you can't be there to enjoy a walk with your best friend or keep them company during the day, let us help.</p>
-          <p>Whether you need care for your buddy while you take a well earned break or you can't quite trust the sofa to be in one piece when you get home, we're here to help.</p>
-          <p>Our mission is simply to provide high quality care in a safe environment, for your dog, in your absence.</p>
-        </div>
-      </div>
-    </div>
-  </div>
 
-  <div class="parallax"></div>
-    <div class="container">
+      <div class="overview">
         <div class="row">
           <div class="col-md-6">
-            <div id="walks">
-              <h2><span style="padding-top: 30px">Fancy a Walk?</span></h2>
-              <p>Whether you're pooch is staying with us for the day or just needs a day time walk, eWoof loves to walk.<br> We walk predominantly in enclosed fields with lots of space, safely away from traffic, livestock and main roads.<br> Walks are generally an hour, but for our littler or more senior customers, we can take it easy too.<br> Most days we meet other groups and walkers so your pup will enjoy plenty of socialisation. Many of our human customers report a more sociable, calm and confident dog after several walks with us.</p>
+            <div id="overview-image">
+              <img src="./assets/images/dog-sofa.jpg" height="400px">
             </div>
           </div>
           <div class="col-md-6">
-            <div id="walks_image">
-              <img src="./assets/images/alg_dogwalker.jpg" height="400px">
+            <div id="overview-text">
+              <h2><span style="padding-top: 30px">eWoof</span></h2>
+              <p>eWoof is a family run business providing home from home services for your peace of mind.</p><br>
+              <p>With busy working lives and commitments we all need a helping hand.<br>If you can't be there to enjoy a walk with your best friend or keep them company during the day, let us help.</p>
+              <p>Whether you need care for your buddy while you take a well earned break or you can't quite trust the sofa to be in one piece when you get home, we're here to help.</p>
+              <p>Our mission is simply to provide high quality care in a safe environment, for your dog, in your absence.</p>
             </div>
           </div>
         </div>
       </div>
+
+  <div class="parallax"></div>
+
+  <section id="walks">
+    <div class="overview">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div id="walks-text">
+              <h2>Fancy a Walk?</h2>
+              <p>Whether you're pooch is staying with us for the day or just needs a day time walk, eWoof loves to walk.<br> We walk predominantly in enclosed fields with lots of space, safely away from traffic, livestock and main roads.<br> Walks are generally an hour, but for our littler or more senior customers, we can take it easy too.<br> Most days we meet other groups and walkers so your pup will enjoy plenty of socialisation. Many of our human customers report a more sociable, calm and confident dog after several walks with us.</p>
+            </div>
+
+          </div>
+          <div class="col-md-6">
+            <div id="walks-image">
+              <img src="./assets/images/alg_dogwalker.jpg" width="600px">
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+
 
 
 
@@ -99,150 +104,148 @@
     </div> -->
   </div>
 
-  <div class="boarding">
-    <!-- <section id="db"> -->
+
+  <section id="boarding">
+    <!-- <div class="boarding"> -->
       <h1><span style="font-family: Dirty_Play;font-size: 3.5rem">Boarding</span></h1>
-      <p>Click on the images below to view details</p><br>
-      <div class="row">
-        <div class="col-sm-6" id="db">
-          <h2>Day Boarding</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="artsy.html" target="_blank">
-          <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Artsy.png" alt="Artsy" style="width:380px;border:0;">
-        </a>
-        </div>
-        <div class="col-sm-6" id="ovb">
-          <h2>Overnight Stays</h2>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <a href="betbucket.html" target="_blank">
-            <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket.png" alt="Bet_Bucket" style="width:380px;border:0;">
-          </a>
-        </div>
+      <p>eWoof welcomes both regular and ad hoc boarders. We board a maximum of 4 guest dogs in our home at any time.<br>Our guests have the run of the ground floor, with access to a self-contained garden, secured by locked doors all round and 6ft fences.<br> Guests can snooze on heated floors or in cool rooms, inside or outside, whatever they prefer.<br>There are 2 walks per day, so pooches enjoy plenty of socialisation and exercise.<br> There is plenty of space to play or spend time alone. We look after your pet as if it were part of our family.</p>
+      <br>
+      <p>We welcome raw feeders and have seperate facilities for storing and preparing all food.</p>
+    <div class="row">
+      <div class="col-md-6" id="db">
+        <h2>Day Boarding</h2>
+        <p>Day boarders are very welcome on a regular or ad hoc basis.<br>Our standard hours for day boarding are 8am-6pm Monday to Friday.<br>Weekends may be available on request</p>
+        <a href="artsy.html" target="_blank">
+        <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Artsy.png" alt="Artsy" style="width:380px;border:0;">
+      </a>
       </div>
-  </div>
+      <div class="col-md-6" id="ovb">
+        <h2>Overnight Stays</h2>
+        <p>Our overnight customers are free to sleep wherever they feel comfortable on rugs, sofas, cool floors (or hot floors), in their own beds or a crate (which you may wish to bring with you).<br>Overnight stays are charged per day from 8am with, collection before 10am the following day<br></p>
+        <br>
+        <p>eWoof is available for long-term stays so that you can enjoy a well deserved break or holiday. Your dog will enjoy a home from home experience with us and have a prety amazing holiday making new friends and getting plenty of time to play and run about - everyone's happy!</p>
+        <a href="betbucket.html" target="_blank">
+        <img src="https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/Bet_Bucket.png" alt="Bet_Bucket" style="width:380px;border:0;">
+        </a>
+      </div>
+    </div>
+    <!-- </div> -->
+  </section>
 
-  <div class="parallax2"></div>
-  <div class="container">
-    <div class="content2">
-      <section id="strengths">
-        <div class="row">
-          <div class="col-sm-10 offset-sm-1">
-            <h1><span style="font-family: Dirty_Play;font-size: 3.5rem">My top 5 Super Powers</span></h1><br>
-            <p>Find out what my super powers are, according to Gallup's&#174; StrengthsFinder&#174; personality test.</p>
-            <p>Of the 34 themes measured, Gallup's&#174; Signature Themes report presents my five most dominant themes of talent, ranked in order below.<br><br>These strengths will give you an idea of how I would fit in with any team and more importantly - what strengths I can offer.</p><br>
-            <!-- modal -->
-            <div class="container">
-            <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#Relator">Relator</button>
-              <!-- Modal -->
-              <div class="modal fade" id="Relator" role="dialog">
-                <div class="modal-dialog">
-                <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Relator</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>Relator describes my attitude towards relationships, pulling me toward people I already know. Once the initial connection has been made, I deliberately encourage a deepening of the relationship.<br><br>I want to understand feelings, goals, fears and  dreams. For me, a relationship has value only if it is genuine and I take these steps toward real friendship willingly.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
+    <div class="parallax2"></div>
+    <div class="container">
+      <div class="content2">
+        <section id="Prices">
+          <div class="row">
+            <div class="col-md-12">
+              <h1><span style="font-size: 3.5rem">Pricing</span></h1><br>
+              <p>CLick on the buttons below for pricing</p><br>
+              <!-- modal -->
+              <div class="container">
+              <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#Walks">Walks</button>
+                <!-- Modal -->
+                <div class="modal fade" id="Walks" role="dialog">
+                  <div class="modal-dialog">
+                  <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Walks</h4>
+                      </div>
+                      <div class="modal-body">
+                        <h2>£10 per hour</h2><br>
+                        <p>Collection from Flackwell Heath, Wooburn Green, Bourne End & Loudwater<br><br>Walks are for one hour<br><br>Please state whether you prefer an off or on-lead walk.<br></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Learner">Learner</button>
-              <!-- Modal -->
-              <div class="modal fade" id="Learner" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Learner</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>I love love love to learn. Whatever the subject, I am always drawn to the process of learning. The process is especially exciting for me as I am energized by the steady and deliberate journey from ignorance to competence.<br><br>My excitement enables me to thrive in dynamic work environments where I am asked to take on short project assignments and expected to learn a lot about the new subject matter in a short period of time and then move on to the next one.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#Day-Boarding">Day-Boarding</button>
+                <!-- Modal -->
+                <div class="modal fade" id="Day-Boarding" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Day-Boarding</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Available Mon-Fri: 8am - 6pm</p>
+                        <h2>£20 per day</h2>
+                        <p><span class="font-size: 12px">except public holidays</span></p><br><hr>
+
+                        <p>Upon Request we can offer:<br>Sat-Sun: £25 per day<br>Public holidays: £40 per day <br><br>All prices include 2 walks<br><br></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Achiever">Achiever</button>
-              <!-- Modal -->
-              <div class="modal fade" id="Achiever" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Achiever</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>Achiever describes my constant need for achievement - every day starts at zero! By the end of the day I must achieve something tangible in order to feel good about myself – every day!<br><br>I have an internal fire burning inside me. It pushes me to do more, to achieve more. It is the power supply that causes me to set the pace and define the levels of productivity for my work group. It is the theme that keeps me moving.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#Overnight-Boarding">Overnight boarding</button>
+                <!-- Modal -->
+                <div class="modal fade" id="Overnight-Boarding" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Overnight boarding</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>Available Mon-Sat(am): 8am - 10am (next day)</p>
+                        <h2>£25 per day</h2>
+                        <p><span class="font-size: 12px">except public holidays</span></p><br><hr>
+
+                        <p>Upon Request we can offer:<br>Sat-Sun: £25 per day<br>Public holidays: £50 per day <br><br>All prices include 2 walks<br><br></p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
 
-              <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#Intellection">Intellection</button>
-              <!-- Modal -->
-              <div class="modal fade" id="Intellection" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Intellection</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>I love to think. I like mental activity. This need for mental activity may or may not be focused!  I am the kind of person who enjoys my time alone because it is my time for musing and reflection.<br><br>I can be introspective, my own best companion, as I pose myself questions and try out answers on myself to see how they might work.</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                  </div>
-                </div>
-              </div>
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-warning btn-lg" data-toggle="modal" data-target="#Long-term-stay">Long-term stay</button>
+                <!-- Modal -->
+                <div class="modal fade" id="Long-term-stay" role="dialog">
+                  <div class="modal-dialog">
+                    <!-- Modal content-->
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Long-term stay</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p></p>
+                        <h2>£25 per overnight stay</h2>
+                        <h2>£20 per daytime stay</h2>
+                        <p><span class="font-size: 12px">except public holidays</span></p><br><hr>
 
-              <!-- Trigger the modal with a button -->
-              <button type="button" class="btn btn-danger btn-lg" data-toggle="modal" data-target="#Arranger">Arranger</button>
-              <!-- Modal -->
-              <div class="modal fade" id="Arranger" role="dialog">
-                <div class="modal-dialog">
-                  <!-- Modal content-->
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <button type="button" class="close" data-dismiss="modal">&times;</button>
-                      <h4 class="modal-title">Arranger</h4>
-                    </div>
-                    <div class="modal-body">
-                      <p>I am a conductor. When faced with a complex situation involving many factors, I enjoy managing all of the variables, aligning and realigning them until I am sure I have arranged them in the most productive configuration possible.<br><br>I am a shining example of effective flexibility!<br><br>From the mundane to the complex, I am always looking for the perfect configuration and I am at my best in dynamic situations. I jump into the confusion, devising new options, hunting for new paths of least resistance, and figuring out new partnerships—because, after all, there might just be a better way!</p>
-                    </div>
-                    <div class="modal-footer">
-                      <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <p>Public holidays: £50 per overnight stay & £40 per daytime stay <br><br>All prices include 2 walks<br><br><br><br>e.g. a 1 week stay might consist of<br>6 nights (£25) + 1 day (£20)</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <!-- modal end -->
           </div>
-        </div>
-      </section>
+        </section>
+      </div>
     </div>
-  </div>
 
     <div class="parallax4"></div>
     <div class="container">
