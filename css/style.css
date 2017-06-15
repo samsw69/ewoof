@@ -251,7 +251,7 @@ section {
 .content2 {
   text-align: center;
   height: 50%; }
-  .content2 h2 {
+  .content2 h1 {
     text-align: center;
     color: #AC1439;
     padding-top: 20px;
@@ -261,6 +261,12 @@ section {
     color: #777; }
   .content2 div {
     background-color: #FFF; }
+
+#Prices h1 {
+  text-align: center;
+  color: #AC1439;
+  padding-top: 20px;
+  font-family: goldenratio_demo; }
 
 .parallax4 {
   height: 700px;
@@ -326,11 +332,11 @@ section {
     border-radius: 50px; }
 
 #boarding {
-  padding-top: 60px;
-  margin-top: 80px; }
+  margin: auto;
+  padding-top: 60px; }
   #boarding p {
-    font-size: 18px; }
-  #boarding h2 {
+    font-size: 2opx; }
+  #boarding h2, #boarding h1 {
     font-family: goldenratio_demo;
     color: #AC1439;
     padding-bottom: 20px;
@@ -338,34 +344,17 @@ section {
   #boarding div {
     background-color: #FFF; }
 
-#beknowin {
-  padding-left: 20px; }
-  #beknowin p {
-    font-size: 18px;
-    font-family: oxygen_light; }
-  #beknowin h1, #beknowin h2 {
-    font-family: goldenratio_demo;
-    color: #AC1439;
-    padding-bottom: 30px;
-    text-align: center; }
-
-#beknow_ending, #beknow_middle {
+#db, #ovb {
+  margin-top: 30px;
   text-align: center;
-  padding-bottom: 60px;
-  margin: 0 auto; }
-  #beknow_ending h2, #beknow_middle h2 {
-    font-family: goldenratio_demo;
-    line-height: 26px;
-    font-size: 22px;
-    color: #AC1439;
-    text-align: center;
-    margin-top: 40px;
-    border: 1px #18B89D;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #18B89D;
-    border-radius: 50px;
-    padding: 15px; }
+  border: 1px #18B89D;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #18B89D;
+  border-radius: 50px;
+  padding: 15px; }
+  #db img, #ovb img {
+    margin-top: 20px; }
 
 #logos, #moreInfo {
   border-style: solid;

@@ -354,7 +354,7 @@ vertical-align: middle;
 .content2 {
  text-align: center;
  height: 50%;
- h2 {
+ h1 {
    text-align: center;
    color: $brand-secondary;
    padding-top: 20px;
@@ -370,7 +370,14 @@ vertical-align: middle;
   }
 }
 
-
+#Prices {
+  h1 {
+    text-align: center;
+    color: $brand-secondary;
+    padding-top: 20px;
+    font-family: goldenratio_demo;
+    }
+}
 //
 // .parallax3 {
 //   height: 700px;
@@ -519,13 +526,14 @@ vertical-align: middle;
 
 
 #boarding{
-  // border: 1px $brand-secondary;
+  margin: auto;
+ // border: 1px $brand-secondary;
   padding-top: 60px;
-  margin-top: 80px;
+  // margin-top: 80px;
   p {
-    font-size: 18px;
+    font-size: 2opx;
   }
-  h2 {
+  h2, h1 {
   font-family: goldenratio_demo;
   color: $brand-secondary;
   padding-bottom: 20px;
@@ -534,42 +542,58 @@ vertical-align: middle;
   div {
    background-color: $white ;
  }
-}
 
-#beknowin {
-  padding-left: 20px;
-  p {
-    font-size: 18px;
-    font-family: oxygen_light;
-  }
-  h1, h2 {
-    font-family: goldenratio_demo;
-    color: #AC1439;
-    padding-bottom: 30px;
-    text-align: center;
-  }
 }
-
-#beknow_ending, #beknow_middle {
+#db, #ovb {
+  margin-top: 30px;
   text-align: center;
-  padding-bottom: 60px;
-  margin: 0 auto;
-
-  h2 {
-    font-family: goldenratio_demo;
-    line-height: 26px;
-    font-size: 22px;
-    color: #AC1439;
-    text-align: center;
-    margin-top: 40px;
-    border: 1px $brand-color;
-    border-style: solid;
-    border-width: 2px;
-    border-color: $brand-color;
-    border-radius: 50px;
-    padding: 15px;
+  border: 1px $brand-color;
+  border-style: solid;
+  border-width: 2px;
+  border-color: $brand-color;
+  border-radius: 50px;
+  // margin: 20px;
+  padding: 15px;
+  img {
+    margin-top: 20px;
   }
 }
+
+
+// #beknowin {
+//   padding-left: 20px;
+//   p {
+//     font-size: 18px;
+//     font-family: oxygen_light;
+//   }
+//   h1, h2 {
+//     font-family: goldenratio_demo;
+//     color: #AC1439;
+//     padding-bottom: 30px;
+//     text-align: center;
+//   }
+// }
+
+// #beknow_ending, #beknow_middle {
+//   text-align: center;
+//   padding-bottom: 60px;
+//   margin: 0 auto;
+//
+//   h2 {
+//     font-family: goldenratio_demo;
+//     line-height: 26px;
+//     font-size: 22px;
+//     color: #AC1439;
+//     text-align: center;
+//     margin-top: 40px;
+//     border: 1px $brand-color;
+//     border-style: solid;
+//     border-width: 2px;
+//     border-color: $brand-color;
+//     border-radius: 50px;
+//     padding: 15px;
+//   }
+// }
 
 
 
