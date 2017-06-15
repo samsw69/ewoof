@@ -9,10 +9,10 @@
     src: url("../assets/fonts/oxygen_light.ttf");
 }
 
-@font-face {
-    font-family: "Dirty_Play";
-    src: url("../assets/fonts/Dirty_Play.ttf");
-}
+// @font-face {
+//     font-family: "Dirty_Play";
+//     src: url("../assets/fonts/Dirty_Play.ttf");
+// }
 
 /* Safari 4.0 - 8.0 */
 // @-webkit-keyframes mymove {
@@ -24,7 +24,6 @@
 //     from {right: 0px;}
 //     to {right: 200px;}
 // }
-
 
 $brand-color: #18B89D;
 $brand-secondary: #AC1439 ;
@@ -52,6 +51,10 @@ h1, h2, h3 {
   margin-top: 0;
 }
 
+h1 {
+  color: $brand-secondary;
+  font-family: $heading;
+}
 h2 {
   font-size: 36px;
   color: $brand-secondary;
@@ -379,29 +382,33 @@ vertical-align: middle;
     }
 }
 //
-// .parallax3 {
-//   height: 700px;
-//   width: 100%;
-//   background-image: url("https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/old_mic.jpg");
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-attachment: fixed;
-//  }
-//
-//  .content3 {
-//    text-align: center;
-//    height: 50%;
-//    p {
-//      color: #777;
-//    }
-//    div {
-//     background-color: $white ;
-//     h2 {
-//       text-align: center;
-//       color: $brand-secondary;
-//     }
-//   }
-// }
+.parallax3 {
+  height: 700px;
+  width: 100%;
+  background-image: url("../assets/images/dal_point.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+ }
+
+
+   .content3 {
+     text-align: center;
+     height: 50%;
+     width: 100%;
+     h1 {
+       text-align: center;
+       color: $brand-secondary;
+      //  padding-top: 20px;
+       font-family: goldenratio_demo;
+       }
+     p {
+       color: #777;
+     }
+     div {
+      background-color: $white ;
+      }
+    }
 
 .parallax4 {
   height: 700px;
