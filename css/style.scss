@@ -1,4 +1,3 @@
-// @import "bootstrap/bootstrap-grid";
 @font-face {
   font-family: goldenratio_demo;
   src: url("../assets/fonts/goldenratio_demo.ttf");
@@ -8,22 +7,6 @@
     font-family: "oxygen_light";
     src: url("../assets/fonts/oxygen_light.ttf");
 }
-
-// @font-face {
-//     font-family: "Dirty_Play";
-//     src: url("../assets/fonts/Dirty_Play.ttf");
-// }
-
-/* Safari 4.0 - 8.0 */
-// @-webkit-keyframes mymove {
-//     from {right: 0px;}
-//     to {right: 200px;}
-// }
-//
-// @keyframes mymove {
-//     from {right: 0px;}
-//     to {right: 200px;}
-// }
 
 $brand-color: #18B89D;
 $brand-secondary: #AC1439 ;
@@ -171,135 +154,9 @@ section {
   }
 }
 
-#overview-text {
-  margin-right: 20px;
-  padding-top: 40px;
-  text-align: center;
-  max-width: 80%;
-
-}
-
-#overview-image {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  margin-right: 60px;
-}
-
-// .walks {
-//   padding: 20px;
-//   // padding-top: 100px;
-// }
-
 .walks_text {
     text-align: center;
-
   }
-
-// .walks-image {
-//   padding-top: 20px;
-//   margin-bottom: 40px;
-//   padding-left: 50px;
-//   margin-right: 60px;
-// }
-
-#logo {
-text-align: left;
-vertical-align: middle;
-
-}
-
-.project_title {
-  width: 100%;
-  z-index: 1;
-  position: fixed;
-  margin-left: 0px;
-  background-color: $white;
-  margin-top: -100px;
-  padding-top: 80px;
-  img {
-    float: left;
-  }
-  h1 {
-    font-family: $heading;
-    text-align: left;
-    padding-top: 10px;
-  }
-}
-
-.project_tech_top {
-  border: 1px $brand-secondary;
-  padding-top: 50px;
-  text-align: justify;
-  margin-top: 100px;
-  margin-left: 20px;
-  h2 {
-  font-family: $heading;
-  color: $black;
-  padding-bottom: 20px;
-  }
-  div {
-   background-color: $white ;
- }
-}
-
-.project_tech {
-  border: 1px $brand-secondary;
-  // padding-top: 20px;
-  text-align: justify;
-  // margin-top: 30px;
-  margin-left: 20px;
-  h2 {
-  font-family: $heading;
-  color: $black;
-  padding-bottom: 20px;
-  }
-  div {
-   background-color: $white ;
- }
-}
-
-
-.project_image {
-  margin-top: 50px;
-  margin-left: 20px;
-  img {
-    height: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black;
-  }
-  h3 {
-    font: oxygen_light;
-    font-size: 20px;
-    font-weight: bold;
-    color: $brand-secondary;
-  }
-}
-
-.project_image2 {
-  margin-top: 50px;
-  margin-bottom: 80px;
-  img {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto
-  }
-  h3 {
-    font: oxygen_light;
-    font-size: 20px;
-    font-weight: bold;
-    color: $brand-secondary;
-  }
-}
-
-.text {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: $font;
-  // font-size: 14px;
-}
 
 .parallax {
   height: 800px;
@@ -312,12 +169,9 @@ vertical-align: middle;
 
  .walk {
   padding-top: 20px;
-  // min-height: 70vh;
   background-color: $white;
   color: $brand-color;
   text-align: right;
-  // font-family: Dirty_Play;
-
   }
 
 
@@ -347,8 +201,7 @@ vertical-align: middle;
 
 .parallax2 {
   height: 900px;
-  // width: 100%;
-  background-image: url("../assets/images/garden2.png");
+  background-image: url("../assets/images/garden2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -362,7 +215,6 @@ vertical-align: middle;
    color: $brand-secondary;
    padding-top: 20px;
    color: $black;
-  //  text-align: right;
    font-family: goldenratio_demo;
    }
  p {
@@ -373,15 +225,7 @@ vertical-align: middle;
   }
 }
 
-#Prices {
-  h1 {
-    text-align: center;
-    color: $brand-secondary;
-    padding-top: 20px;
-    font-family: goldenratio_demo;
-    }
-}
-//
+
 .parallax3 {
   height: 700px;
   width: 100%;
@@ -391,7 +235,6 @@ vertical-align: middle;
   background-attachment: fixed;
  }
 
-
    .content3 {
      text-align: center;
      height: 50%;
@@ -399,8 +242,13 @@ vertical-align: middle;
      h1 {
        text-align: center;
        color: $brand-secondary;
-      //  padding-top: 20px;
        font-family: goldenratio_demo;
+       padding-bottom: 20px;
+       }
+       h2 {
+         padding-bottom: 20px;
+         font-family: goldenratio_demo;
+         color: $brand-secondary;
        }
      p {
        color: #777;
@@ -439,98 +287,34 @@ vertical-align: middle;
 #hero {
   height: 100vh;
   background-image: url('../assets/images/Rob_with_pals.jpg');
-  // background-position: 10px 100px;
   background-repeat: no-repeat;
   background-size: 100%;
-  // position: relative;
-  // padding-top: 100px;
-  // padding-right: 100px;
   margin: auto;
   h2 {
     font-size: 36px;
-    // position: absolute;
-    // top: 30%;
-    // left: 1300%;
-    // transform: translate(-50%, -50%);
     color: $white;
     font-family: goldenratio_demo;
-      // color: white;
-      // font-size: 40px;
-      // padding-top: 10px;
       margin-left: 55%;
-      // margin-bottom: 500px;
       width: 500px;
       height: 400px;
       padding-top: 120px;
-      // margin-top: 180px;
-      // position: relative;
-      // -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
-      // animation: mymove 5s;
-      // animation-fill-mode: forwards;
     }
   }
-  // img {
-  //   padding-top: -300px;
-  // }
 
-
-  // #hero_phrase {
-  //   h2 {
-  //     font-family: goldenratio_demo;
-  //     color: white;
-  //     font-size: 40px;
-  //     padding-top: 10px;
-  //     margin-left: 250%;
-  //     margin-bottom: 500px;
-  //   }
-  //   width: 300px;
-  //   height: 400px;
-  //   padding-top: 100px;
-  //   margin-top: 180px;
-  //   position: relative;
-  //   // -webkit-animation: mymove 5s; /* Safari 4.0 - 8.0 */
-  //   // animation: mymove 5s;
-  //   // animation-fill-mode: forwards;
-  // }
-
-
-#projects {
-  padding-top: 25px;
-  h2 {
-    font-size: 30px;
-    color: $black;
-    font-family: $heading;
-
-  }
-  img {
-    margin-bottom: 5px;
-  }
-}
-
-#beknowin_title {
-  h1 {
+  #overview-text {
+    margin-right: 20px;
+    padding-top: 40px;
     text-align: center;
-    margin-top: 40px;
-    border: 1px $brand-color;
-    border-style: solid;
-    border-width: 2px;
-    border-color: $brand-color;
-    border-radius: 50px;
+    max-width: 80%;
+
   }
-  width: 80%;
-  z-index: 1;
-  position: fixed;
-  margin-left: auto;
-  background-color: $white;
-  margin-top: -40px;
-  margin-bottom: 30px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  text-align: center;
-}
 
-
-
+  #overview-image {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 50px;
+    margin-right: 60px;
+  }
 
 #boarding{
   margin: auto;
@@ -549,8 +333,8 @@ vertical-align: middle;
   div {
    background-color: $white ;
  }
-
 }
+
 #db, #ovb {
   margin-top: 30px;
   text-align: center;
@@ -566,164 +350,71 @@ vertical-align: middle;
   }
 }
 
-
-// #beknowin {
-//   padding-left: 20px;
-//   p {
-//     font-size: 18px;
-//     font-family: oxygen_light;
-//   }
-//   h1, h2 {
-//     font-family: goldenratio_demo;
-//     color: #AC1439;
-//     padding-bottom: 30px;
-//     text-align: center;
-//   }
-// }
-
-// #beknow_ending, #beknow_middle {
-//   text-align: center;
-//   padding-bottom: 60px;
-//   margin: 0 auto;
-//
-//   h2 {
-//     font-family: goldenratio_demo;
-//     line-height: 26px;
-//     font-size: 22px;
-//     color: #AC1439;
-//     text-align: center;
-//     margin-top: 40px;
-//     border: 1px $brand-color;
-//     border-style: solid;
-//     border-width: 2px;
-//     border-color: $brand-color;
-//     border-radius: 50px;
-//     padding: 15px;
-//   }
-// }
-
-
-
-
-
-
-
-#logos, #moreInfo {
-  h2 {
-    padding-bottom: 20px;
-    font-family: $heading;
-  }
-  border-style: solid;
-  border-width: 2px;
-  border-color: $brand-color;
-  border-radius: 50px;
-  padding:0 60px;
-  padding-top: 20px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px;
-}
-
-#moreInfo {
-  padding-top: 50px;
-}
-
-#row_2_text, #wins {
-  font-family: oxygen_light;
-  padding-top: 30px;
-  h3 {
-    font: oxygen_light;
-    font-size: 20px;
-    font-weight: bold;
-    color: $brand-secondary;
-
-  }
-}
-
-#wins {
-  border-style: solid;
-  border-width: 2px;
-  border-color: $brand-color;
-  border-radius: 50px;
-  background-color: $brand-color;
-  padding: 40px;
-  padding-bottom: 10px;
-  color: $white;
-  margin-top: 20px;
+#next_steps {
   text-align: justify;
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 20px;
+  border-color: $brand-color;
+  margin-right: 50px;
+  margin-left: 50px;
   h2 {
-    padding-bottom: 20px;
-    font-size: 24px;
+    text-align: center;
   }
 }
 
-#BetBucket_project_image2 {
-  img {
-    padding-bottom: 30px;
-  }
-  p {
-    padding-bottom: 35px;
-  }
+#forms {
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 20px;
+  border-color: $brand-color;
+  margin-left: 50px;
 }
 
-#Piar_NT {
-  h2 {
-    margin-top: 30px;
-  }
+#Prices {
+  h1 {
+    text-align: center;
+    color: $brand-secondary;
+    padding-top: 20px;
+    font-family: goldenratio_demo;
+    }
 }
 
-#contacts {
+#contact {
   padding-top: 20px;
   padding-bottom: 40px;
   h1 {
     padding-bottom: 0px;
+  }
+  h2 {
+    font-family: oxygen_light;
+    color: black;
+    // padding-bottom: 30px;
+    font-size: 22px;
+    text-align: center;
   }
   p {
     padding-bottom: 20px;
     line-height: 30px;
   }
 }
-
-#fb {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/monkey.jpg');
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  .text_box {
-    position: absolute;
-    left: 75%;
-    top: 15%;
-  }
-  h2 {
-    font-family: Dirty_Play;
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    // transform: translate(-50%, -50%);
-    color: $white;
-  }
+#logos {
+  padding-top: 30px;
+}
+#peace {
+  margin-top: 20px;
 }
 
+#logo {
+text-align: left;
+vertical-align: middle;
+
+}
 footer {
   background-color: rgba(20, 20, 20, 1);
   padding: 10px 0;
   text-align: center;
   color: $white;
-}
-
-// london animation
-svg {
-  height: 350px;
-  overflow: hidden;
-}
-
-body {
-  background-color: #eadbd7;
 }
 
 .content {
@@ -733,25 +424,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-
-#bus {
-  animation: drive 13s linear infinite;
-  -webkit-animation: drive 13s linear infinite;
-  -moz-animation: drive 13s linear infinite;
-  -o-animation: drive 13s linear infinite;
-  transform-origin: 50% 50%;
-}
-
-@keyframes drive {
-  0% {
-    transform: translateX(-300px);
-  }
-  100% {
-    transform: translateX(1500px);
-  }
-}
-
-// london end
 
 @media only screen and (max-width: 575px) {
   header {

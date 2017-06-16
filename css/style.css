@@ -4,7 +4,6 @@
 @font-face {
   font-family: "oxygen_light";
   src: url("../assets/fonts/oxygen_light.ttf"); }
-/* Safari 4.0 - 8.0 */
 * {
   font-family: inherit; }
 
@@ -118,96 +117,8 @@ section {
     margin: 20px;
     padding-left: 60px; }
 
-#overview-text {
-  margin-right: 20px;
-  padding-top: 40px;
-  text-align: center;
-  max-width: 80%; }
-
-#overview-image {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-left: 50px;
-  margin-right: 60px; }
-
 .walks_text {
   text-align: center; }
-
-#logo {
-  text-align: left;
-  vertical-align: middle; }
-
-.project_title {
-  width: 100%;
-  z-index: 1;
-  position: fixed;
-  margin-left: 0px;
-  background-color: #FFF;
-  margin-top: -100px;
-  padding-top: 80px; }
-  .project_title img {
-    float: left; }
-  .project_title h1 {
-    font-family: goldenratio_demo;
-    text-align: left;
-    padding-top: 10px; }
-
-.project_tech_top {
-  border: 1px #AC1439;
-  padding-top: 50px;
-  text-align: justify;
-  margin-top: 100px;
-  margin-left: 20px; }
-  .project_tech_top h2 {
-    font-family: goldenratio_demo;
-    color: #232425;
-    padding-bottom: 20px; }
-  .project_tech_top div {
-    background-color: #FFF; }
-
-.project_tech {
-  border: 1px #AC1439;
-  text-align: justify;
-  margin-left: 20px; }
-  .project_tech h2 {
-    font-family: goldenratio_demo;
-    color: #232425;
-    padding-bottom: 20px; }
-  .project_tech div {
-    background-color: #FFF; }
-
-.project_image {
-  margin-top: 50px;
-  margin-left: 20px; }
-  .project_image img {
-    height: 600px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    border: 1px solid black; }
-  .project_image h3 {
-    font: oxygen_light;
-    font-size: 20px;
-    font-weight: bold;
-    color: #AC1439; }
-
-.project_image2 {
-  margin-top: 50px;
-  margin-bottom: 80px; }
-  .project_image2 img {
-    width: 500px;
-    margin-left: auto;
-    margin-right: auto; }
-  .project_image2 h3 {
-    font: oxygen_light;
-    font-size: 20px;
-    font-weight: bold;
-    color: #AC1439; }
-
-.text {
-  margin-left: 20px;
-  margin-top: 20px;
-  font-family: oxygen_light; }
 
 .parallax {
   height: 800px;
@@ -244,7 +155,7 @@ section {
 
 .parallax2 {
   height: 900px;
-  background-image: url("../assets/images/garden2.png");
+  background-image: url("../assets/images/garden2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -263,12 +174,6 @@ section {
   .content2 div {
     background-color: #FFF; }
 
-#Prices h1 {
-  text-align: center;
-  color: #AC1439;
-  padding-top: 20px;
-  font-family: goldenratio_demo; }
-
 .parallax3 {
   height: 700px;
   width: 100%;
@@ -284,7 +189,12 @@ section {
   .content3 h1 {
     text-align: center;
     color: #AC1439;
-    font-family: goldenratio_demo; }
+    font-family: goldenratio_demo;
+    padding-bottom: 20px; }
+  .content3 h2 {
+    padding-bottom: 20px;
+    font-family: goldenratio_demo;
+    color: #AC1439; }
   .content3 p {
     color: #777; }
   .content3 div {
@@ -324,34 +234,17 @@ section {
     height: 400px;
     padding-top: 120px; }
 
-#projects {
-  padding-top: 25px; }
-  #projects h2 {
-    font-size: 30px;
-    color: #232425;
-    font-family: goldenratio_demo; }
-  #projects img {
-    margin-bottom: 5px; }
+#overview-text {
+  margin-right: 20px;
+  padding-top: 40px;
+  text-align: center;
+  max-width: 80%; }
 
-#beknowin_title {
-  width: 80%;
-  z-index: 1;
-  position: fixed;
-  margin-left: auto;
-  background-color: #FFF;
-  margin-top: -40px;
-  margin-bottom: 30px;
-  padding-top: 50px;
-  padding-bottom: 30px;
-  text-align: center; }
-  #beknowin_title h1 {
-    text-align: center;
-    margin-top: 40px;
-    border: 1px #18B89D;
-    border-style: solid;
-    border-width: 2px;
-    border-color: #18B89D;
-    border-radius: 50px; }
+#overview-image {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  margin-right: 60px; }
 
 #boarding {
   margin: auto;
@@ -378,97 +271,59 @@ section {
   #db img, #ovb img {
     margin-top: 20px; }
 
-#logos, #moreInfo {
-  border-style: solid;
-  border-width: 2px;
+#next_steps {
+  text-align: justify;
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 20px;
   border-color: #18B89D;
-  border-radius: 50px;
-  padding: 0 60px;
+  margin-right: 50px;
+  margin-left: 50px; }
+  #next_steps h2 {
+    text-align: center; }
+
+#forms {
+  border: 1px solid black;
+  border-radius: 10%;
+  padding: 20px;
+  border-color: #18B89D;
+  margin-left: 50px; }
+
+#Prices h1 {
+  text-align: center;
+  color: #AC1439;
   padding-top: 20px;
-  margin-top: 20px;
-  margin-bottom: 30px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 30px; }
-  #logos h2, #moreInfo h2 {
-    padding-bottom: 20px;
-    font-family: goldenratio_demo; }
+  font-family: goldenratio_demo; }
 
-#moreInfo {
-  padding-top: 50px; }
-
-#row_2_text, #wins {
-  font-family: oxygen_light;
-  padding-top: 30px; }
-  #row_2_text h3, #wins h3 {
-    font: oxygen_light;
-    font-size: 20px;
-    font-weight: bold;
-    color: #AC1439; }
-
-#wins {
-  border-style: solid;
-  border-width: 2px;
-  border-color: #18B89D;
-  border-radius: 50px;
-  background-color: #18B89D;
-  padding: 40px;
-  padding-bottom: 10px;
-  color: #FFF;
-  margin-top: 20px;
-  text-align: justify; }
-  #wins h2 {
-    padding-bottom: 20px;
-    font-size: 24px; }
-
-#BetBucket_project_image2 img {
-  padding-bottom: 30px; }
-#BetBucket_project_image2 p {
-  padding-bottom: 35px; }
-
-#Piar_NT h2 {
-  margin-top: 30px; }
-
-#contacts {
+#contact {
   padding-top: 20px;
   padding-bottom: 40px; }
-  #contacts h1 {
+  #contact h1 {
     padding-bottom: 0px; }
-  #contacts p {
+  #contact h2 {
+    font-family: oxygen_light;
+    color: black;
+    font-size: 22px;
+    text-align: center; }
+  #contact p {
     padding-bottom: 20px;
     line-height: 30px; }
 
-#fb {
-  height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://s3-eu-west-1.amazonaws.com/beknowin-portfolio/monkey.jpg");
-  background-position: center;
-  background-size: cover;
-  position: relative; }
-  #fb .text_box {
-    position: absolute;
-    left: 75%;
-    top: 15%; }
-  #fb h2 {
-    font-family: Dirty_Play;
-    color: white;
-    font-size: 40px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    color: #FFF; }
+#logos {
+  padding-top: 30px; }
+
+#peace {
+  margin-top: 20px; }
+
+#logo {
+  text-align: left;
+  vertical-align: middle; }
 
 footer {
   background-color: #141414;
   padding: 10px 0;
   text-align: center;
   color: #FFF; }
-
-svg {
-  height: 350px;
-  overflow: hidden; }
-
-body {
-  background-color: #eadbd7; }
 
 .content {
   padding-top: 100px;
@@ -477,18 +332,6 @@ body {
   left: 50%;
   transform: translate(-50%, -50%); }
 
-#bus {
-  animation: drive 13s linear infinite;
-  -webkit-animation: drive 13s linear infinite;
-  -moz-animation: drive 13s linear infinite;
-  -o-animation: drive 13s linear infinite;
-  transform-origin: 50% 50%; }
-
-@keyframes drive {
-  0% {
-    transform: translateX(-300px); }
-  100% {
-    transform: translateX(1500px); } }
 @media only screen and (max-width: 575px) {
   header {
     height: auto; }
