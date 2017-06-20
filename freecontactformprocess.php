@@ -44,6 +44,13 @@ if(isset($_POST['Email_Address'])) {
 		!isset($_POST['Client_Vet']) ||
 		!isset($_POST['Microchip']) ||
 		!isset($_POST['Chip_Number']) ||
+		!isset($_POST['Breed']) ||
+		!isset($_POST['DOB']) ||
+		!isset($_POST['Sex']) ||
+		!isset($_POST['Neutered']) ||
+		!isset($_POST['Season']) ||
+		!isset($_POST['Entire']) ||
+		!isset($_POST['Behaviour']) ||
     !isset($_POST['Add_Info']) ||
     !isset($_POST['AntiSpam'])
   ) {
@@ -62,6 +69,13 @@ if(isset($_POST['Email_Address'])) {
 	$client_vet = $_POST['Client_Vet']; // required
 	$microchip = $_POST['Microchip']; // required
 	$chip_number = $_POST['Chip_Number']; // required
+	$breed = $_POST['Breed']; // required
+	$dob = $_POST['DOB']; // required
+	$sex = $_POST['Sex']; // required
+	$neutered = $_POST['Neutered']; // required
+	$season = $_POST['Season']; // required
+	$entire = $_POST['Entire']; // required
+	$behaviour = $_POST['Behaviour']; // required
 	$add_info = $_POST['Add_Info']; // required
 	$antispam = $_POST['AntiSpam']; // required
 
@@ -104,6 +118,34 @@ if(isset($_POST['Email_Address'])) {
   if(strlen($chip_number) < 2) {
     $error_message .= 'Please add a note why your dog is not chipped.<br />';
   }
+  if(strlen($breed) < 4) {
+    $error_message .= 'Please add a breed.<br />';
+  }
+  if(strlen($dob) <= 0) {
+    $error_message .= 'Please add DOB or approximate age if unknown.<br />';
+  }
+  if(strlen($sex) < 3 ) {
+    $error_message .= 'Please indicate sex of dog.<br />';
+  }
+  if(strlen($neutered) < 2 ) {
+    $error_message .= 'Please state if your dog is neutered or spayed.<br />';
+  }
+  if(strlen($season) < 2 ) {
+    $error_message .= 'Please confirm yes or no.<br />';
+  }
+  if(strlen($entire) < 2 ) {
+    $error_message .= 'Please confirm yes or no.<br />';
+  }
+  if(strlen($behaviour) < 2 ) {
+    $error_message .= 'Please state N/A if not applicable<br />';
+  }
+
+
+
+
+
+
+
   if(strlen($add_info) < 2) {
     $error_message .= 'Please write N/A if there is no further information that we need to know about.<br />';
   }
@@ -133,7 +175,13 @@ if(isset($_POST['Email_Address'])) {
 	$email_message .= "Emergency Vet: ".clean_string($emerg_vet)."\r\n";
 	$email_message .= "Client's own Vet: ".clean_string($client_vet)."\r\n";
 	$email_message .= "Micro-chipped: ".clean_string($microchip)."\r\n";
-	$email_message .= "Microchip number and contact details ".clean_string($chip_number)."\r\n";
+	$email_message .= "Microchip number and contact details: ".clean_string($chip_number)."\r\n";
+	$email_message .= "Breed: ".clean_string($breed)."\r\n";
+	$email_message .= "DOB: ".clean_string($dob)."\r\n";
+	$email_message .= "Sex: ".clean_string($sex)."\r\n";
+	$email_message .= "Neutered: ".clean_string($neutered)."\r\n";
+	$email_message .= "Agree to ensure dog is not in season in our care: ".clean_string($season)."\r\n";
+	$email_message .= "Accept risk with entire male: ".clean_string($entire)."\r\n";
 	$email_message .= "Additional Information: ".clean_string($add_info)."\r\n";
 
 $headers = 'From: '.$email_from."\r\n".

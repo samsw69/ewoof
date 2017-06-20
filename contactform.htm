@@ -17,6 +17,14 @@
 	required.add('Client_Vet','NOT_EMPTY','Client Vet');
 	required.add('Microchip','NOT_EMPTY','Microchip');
 	required.add('Chip_Number','NOT_EMPTY','Microchip number');
+	required.add('Breed','NOT_EMPTY','Breed');
+	required.add('DOB','NOT_EMPTY','DOB');
+	required.add('Sex','NOT_EMPTY','Sex');
+	required.add('Neutered','NOT_EMPTY','Neutered');
+	required.add('Season','NOT_EMPTY','Season');
+	required.add('Entire','NOT_EMPTY','Entire');
+	required.add('Medical','NOT_EMPTY','Medical');
+	required.add('Behaviour','NOT_EMPTY','Behaviour');
   required.add('Add_Info','NOT_EMPTY','Additional Information');
   required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
 	</script>
@@ -125,7 +133,6 @@
      <textarea style="width:230px;height:160px" name="Client_Vet" id="Client_Vet" maxlength="2000"></textarea>
    </td>
   </tr>
-
   <tr>
     <td valign="top">
      <label for="Microchip" class="required">Is your dog chipped (yes/no?)<span class="required_star"> * </span></label>
@@ -144,7 +151,84 @@
     </td>
   </tr>
 
+  <br>
+  <title>About your dog</title><br>
 
+  <tr>
+    <td valign="top">
+     <label for="Breed" class="required">Breed<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Breed" id="Breed" maxlength="50" style="width:230px">
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="DOB" class="required">Age or DOB if known<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="DOB" id="DOB" maxlength="20" style="width:230px">
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Sex" class="required">Male or Female?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Sex" id="Sex" maxlength="10" style="width:230px">
+    </td>
+  </tr>
+
+<p>We firmly believe in responsible pet care, however we do not require that dogs are neutered and we
+do accept holistically cared for dogs as well as those receiving conventional vaccinations. If this
+causes concern please discuss this with us so we can meet your needs.</p>
+
+<tr>
+  <td valign="top">
+   <label for="Neutered" class="required">Is your dog neutered or spayed?<span class="required_star"> * </span></label>
+  </td>
+  <td valign="top">
+   <input type="text" name="Neutered" id="Neutered" maxlength="50" style="width:230px">
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+   <label for="Season" class="required">If your female has not been spayed, will you ensure she is not, or about to be, in season, when in our care?<span class="required_star"> * </span></label>
+  </td>
+  <td valign="top">
+   <input type="text" name="Season" id="Season" maxlength="10" style="width:230px">
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+   <label for="Entire" class="required">Do you acknowledge and understand that our resident male is entire and accept the risks associated with placing an unspayed bitch in our care?<span class="required_star"> * </span></label>
+  </td>
+  <td valign="top">
+   <input type="text" name="Entire" id="Entire" maxlength="10" style="width:230px">
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+   <label for="Medical" class="required">What medical conditions should we be aware of?<span class="required_star"> * </span></label>
+  </td>
+  <td valign="top">
+   <textarea style="width:230px;height:160px" name="Medical" id="Medical" maxlength="300"></textarea>
+  </td>
+</tr>
+
+<tr>
+  <td valign="top">
+   <label for="Behaviour" class="required">What behavioural problems, dislikes or habits should we be aware of?<span class="required_star"> * </span></label>
+  </td>
+  <td valign="top">
+   <textarea style="width:230px;height:160px" name="Behaviour" id="Behaviour" maxlength="300"></textarea>
+  </td>
+</tr>
 
 
 
