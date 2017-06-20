@@ -13,6 +13,10 @@
 	required.add('Home_Tel','NOT_EMPTY','Home Phone');
 	required.add('Mobile_Tel','NOT_EMPTY','Mobile Phone');
 	required.add('Work_Tel','NOT_EMPTY','Work Phone');
+	required.add('Emerg_Vet','NOT_EMPTY','Emergency Vet');
+	required.add('Client_Vet','NOT_EMPTY','Client Vet');
+	required.add('Microchip','NOT_EMPTY','Microchip');
+	required.add('Chip_Number','NOT_EMPTY','Microchip number');
   required.add('Add_Info','NOT_EMPTY','Additional Information');
   required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
 	</script>
@@ -25,7 +29,7 @@
 	<tr>
 	 <td colspan="2">
 
-	 <div class="freecontactformheader">Contact Us Form</div>
+	 <div class="freecontactformheader">eWoof Consent Form</div>
 
 	 <div class="freecontactformmessage">Fields marked with <span class="required_star"> * </span> are mandatory.</div>
 
@@ -94,6 +98,56 @@
      <input type="text" name="Work_Tel" id="Work_Tel" maxlength="50" style="width:230px">
     </td>
   </tr>
+
+  <tr>
+   <td valign="top">
+    <label for="Alt_Contact" class="required">Please provide name, telphone number and address of an emergency contact if we can't get hold of you.<span class="required_star"> * </span></label>
+   </td>
+   <td valign="top">
+    <textarea style="width:230px;height:160px" name="Alt_Contact" id="Alt_Contact" maxlength="200"></textarea>
+   </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Emerg_Vet" class="required">Permission to use our Emergency vet if required? (yes/no?)<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Emerg_Vet" id="Emerg_Vet" maxlength="50" style="width:230px">
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Client_Vet" class="required">Registered vet name and address<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <textarea style="width:230px;height:160px" name="Client_Vet" id="Client_Vet" maxlength="2000"></textarea>
+   </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Microchip" class="required">Is your dog chipped (yes/no?)<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Microchip" id="Microchip" maxlength="50" style="width:230px">
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Chip_Number" class="required">Microchip number and details of company your dog is registered with (if applicable)<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <textarea style="width:230px;height:160px" name="Chip_Number" id="Chip_Number" maxlength="300"></textarea>
+    </td>
+  </tr>
+
+
+
+
+
 
 	<tr>
 	 <td valign="top">

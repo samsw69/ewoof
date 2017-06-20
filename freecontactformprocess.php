@@ -39,6 +39,11 @@ if(isset($_POST['Email_Address'])) {
 		!isset($_POST['Home_Tel']) ||
 		!isset($_POST['Mobile_Tel']) ||
 		!isset($_POST['Work_Tel']) ||
+		!isset($_POST['Alt_Contact']) ||
+		!isset($_POST['Emerg_Vet']) ||
+		!isset($_POST['Client_Vet']) ||
+		!isset($_POST['Microchip']) ||
+		!isset($_POST['Chip_Number']) ||
     !isset($_POST['Add_Info']) ||
     !isset($_POST['AntiSpam'])
   ) {
@@ -52,6 +57,11 @@ if(isset($_POST['Email_Address'])) {
 	$home_tel = $_POST['Home_Tel']; // required
 	$mobile_tel = $_POST['Mobile_Tel']; // required
 	$work_tel = $_POST['Work_Tel']; // not required
+	$emerg_vet = $_POST['Emerg_Vet']; // required
+	$alt_contact = $_POST['Alt_Contact']; // required
+	$client_vet = $_POST['Client_Vet']; // required
+	$microchip = $_POST['Microchip']; // required
+	$chip_number = $_POST['Chip_Number']; // required
 	$add_info = $_POST['Add_Info']; // required
 	$antispam = $_POST['AntiSpam']; // required
 
@@ -79,6 +89,21 @@ if(isset($_POST['Email_Address'])) {
   if(strlen($work_tel) < 1) {
     $error_message .= 'Your work telephone number does not appear to be valid.<br />';
   }
+  if(strlen($alt_contact) < 10) {
+    $error_message .= 'Please add a name, telephone and address as alternative contact in your absence.<br />';
+  }
+  if(strlen($emerg_vet) < 2) {
+    $error_message .= 'Please enter yes or no.<br />';
+  }
+  if(strlen($client_vet) < 20) {
+    $error_message .= 'Please add your vets full contact details.<br />';
+  }
+  if(strlen($microchip) < 2) {
+    $error_message .= 'Please confirm yes or no.<br />';
+  }
+  if(strlen($chip_number) < 2) {
+    $error_message .= 'Please add a note why your dog is not chipped.<br />';
+  }
   if(strlen($add_info) < 2) {
     $error_message .= 'Please write N/A if there is no further information that we need to know about.<br />';
   }
@@ -104,6 +129,11 @@ if(isset($_POST['Email_Address'])) {
 	$email_message .= "Home Tel: ".clean_string($home_tel)."\r\n";
 	$email_message .= "Mobile Tel: ".clean_string($mobile_tel)."\r\n";
 	$email_message .= "Work Tel: ".clean_string($work_tel)."\r\n";
+	$email_message .= "Alternative Contact: ".clean_string($alt_contact)."\r\n";
+	$email_message .= "Emergency Vet: ".clean_string($emerg_vet)."\r\n";
+	$email_message .= "Client's own Vet: ".clean_string($client_vet)."\r\n";
+	$email_message .= "Micro-chipped: ".clean_string($microchip)."\r\n";
+	$email_message .= "Microchip number and contact details ".clean_string($chip_number)."\r\n";
 	$email_message .= "Additional Information: ".clean_string($add_info)."\r\n";
 
 $headers = 'From: '.$email_from."\r\n".
