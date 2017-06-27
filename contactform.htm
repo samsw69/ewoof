@@ -25,6 +25,11 @@
 	required.add('Entire','NOT_EMPTY','Entire');
 	required.add('Medical','NOT_EMPTY','Medical');
 	required.add('Behaviour','NOT_EMPTY','Behaviour');
+	required.add('Car','NOT_EMPTY','Car');
+  required.add('Travel','NOT_EMPTY','Travel');
+	required.add('Off_Lead','NOT_EMPTY','Off Lead');
+	required.add('Recall','NOT_EMPTY','Recall');
+	required.add('Collection','NOT_EMPTY','Collection');
   required.add('Add_Info','NOT_EMPTY','Additional Information');
   required.add('AntiSpam','NOT_EMPTY','Anti-Spam Question');
 	</script>
@@ -181,57 +186,97 @@
     </td>
   </tr>
 
-<p>We firmly believe in responsible pet care, however we do not require that dogs are neutered and we
-do accept holistically cared for dogs as well as those receiving conventional vaccinations. If this
-causes concern please discuss this with us so we can meet your needs.</p>
+  <p>We firmly believe in responsible pet care, however we do not require that dogs are neutered and we do accept holistically cared for dogs as well as those receiving conventional vaccinations. If this causes concern please discuss this with us so we can meet your needs.</p>
 
-<tr>
-  <td valign="top">
-   <label for="Neutered" class="required">Is your dog neutered or spayed?<span class="required_star"> * </span></label>
-  </td>
-  <td valign="top">
-   <input type="text" name="Neutered" id="Neutered" maxlength="50" style="width:230px">
-  </td>
-</tr>
+  <tr>
+    <td valign="top">
+     <label for="Neutered" class="required">Is your dog neutered or spayed?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Neutered" id="Neutered" maxlength="50" style="width:230px">
+    </td>
+  </tr>
 
-<tr>
-  <td valign="top">
-   <label for="Season" class="required">If your female has not been spayed, will you ensure she is not, or about to be, in season, when in our care?<span class="required_star"> * </span></label>
-  </td>
-  <td valign="top">
-   <input type="text" name="Season" id="Season" maxlength="10" style="width:230px">
-  </td>
-</tr>
+  <tr>
+    <td valign="top">
+     <label for="Season" class="required">If your female has not been spayed, will you ensure she is not, or about to be, in season, when in our care?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Season" id="Season" maxlength="10" style="width:230px">
+    </td>
+  </tr>
 
-<tr>
-  <td valign="top">
-   <label for="Entire" class="required">Do you acknowledge and understand that our resident male is entire and accept the risks associated with placing an unspayed bitch in our care?<span class="required_star"> * </span></label>
-  </td>
-  <td valign="top">
-   <input type="text" name="Entire" id="Entire" maxlength="10" style="width:230px">
-  </td>
-</tr>
+  <tr>
+    <td valign="top">
+     <label for="Entire" class="required">Do you acknowledge and understand that our resident male is entire and accept the risks associated with placing an unspayed bitch in our care?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Entire" id="Entire" maxlength="10" style="width:230px">
+    </td>
+  </tr>
 
-<tr>
-  <td valign="top">
-   <label for="Medical" class="required">What medical conditions should we be aware of?<span class="required_star"> * </span></label>
-  </td>
-  <td valign="top">
-   <textarea style="width:230px;height:160px" name="Medical" id="Medical" maxlength="300"></textarea>
-  </td>
-</tr>
+  <tr>
+    <td valign="top">
+     <label for="Medical" class="required">What medical conditions should we be aware of?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <textarea style="width:230px;height:160px" name="Medical" id="Medical" maxlength="300"></textarea>
+    </td>
+  </tr>
 
-<tr>
-  <td valign="top">
-   <label for="Behaviour" class="required">What behavioural problems, dislikes or habits should we be aware of?<span class="required_star"> * </span></label>
-  </td>
-  <td valign="top">
-   <textarea style="width:230px;height:160px" name="Behaviour" id="Behaviour" maxlength="300"></textarea>
-  </td>
-</tr>
+  <tr>
+    <td valign="top">
+     <label for="Behaviour" class="required">What behavioural problems, dislikes or habits should we be aware of?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <textarea style="width:230px;height:160px" name="Behaviour" id="Behaviour" maxlength="300"></textarea>
+    </td>
+  </tr>
 
+  <tr>
+    <td valign="top">
+     <label for="Car" class="required">CAR TRAVEL: Your dog may be required to travel to a suitable walk location if there is not one near to where you live and/or to collect other dogs to take out on the same walk. Do you give permission for your dog to travel in the car with suitable safety restraint or cage?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Car" id="Car" maxlength="10" style="width:230px">
+    </td>
+  </tr>
 
+  <tr>
+    <td valign="top">
+     <label for="Travel" class="required">Does your dog travel well in the car? <span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Travel" id="Travel" maxlength="10" style="width:230px">
+    </td>
+  </tr>
 
+  <tr>
+    <td valign="top">
+     <label for="Off_Lead" class="required">Do we have permission for your dog to be off-lead on walks?<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Off_Lead" id="Off_Lead" maxlength="50" style="width:230px">
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Recall" class="required">Does your dog respond well to recall? Any special commands / whistle etc??<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Recall" id="Recall" maxlength="150" style="width:230px">
+    </td>
+  </tr>
+
+  <tr>
+    <td valign="top">
+     <label for="Collection" class="required">Collection / drop off details (keys, access, other things we should know?)<span class="required_star"> * </span></label>
+    </td>
+    <td valign="top">
+     <input type="text" name="Collection" id="Collection" maxlength="150" style="width:230px">
+    </td>
+  </tr>
 
 	<tr>
 	 <td valign="top">

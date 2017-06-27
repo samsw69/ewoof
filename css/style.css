@@ -44,8 +44,8 @@ header {
   left: 0;
   right: 0;
   z-index: 2;
-  height: 80px;
-  background-color: white;
+  height: 40px;
+  background-color: #FFF;
   transition: background-color 0.2s ease; }
   header.opaque {
     background-color: rgba(20, 20, 20, 0.6); }
@@ -57,7 +57,7 @@ header {
     header nav ul {
       list-style: none;
       padding: 0;
-      margin: 0; }
+      margin: 10; }
       header nav ul li {
         display: inline-block;
         float: right;
@@ -66,12 +66,12 @@ header {
         header nav ul li:last-of-type {
           margin-left: 0; }
         header nav ul li.menu {
-          color: black;
+          color: #232425;
           cursor: pointer;
           display: none;
-          font-size: 20px; }
+          font-size: 10px; }
         header nav ul li a {
-          color: #FFF;
+          color: #232425;
           letter-spacing: 1px;
           text-transform: uppercase;
           font-weight: bold;
@@ -109,24 +109,19 @@ section {
   letter-spacing: 2px; }
 
 .overview {
-  text-align: right; }
+  text-align: center; }
   .overview p {
     line-height: 30px;
     font-size: 18px; }
-  .overview img {
-    margin: 20px;
-    padding-left: 60px; }
-
-.walks_text {
-  text-align: center; }
 
 .parallax {
-  height: 800px;
-  width: 100%;
-  background-image: url("../assets/images/3_dogs_running.jpg");
+  height: 80vh;
+  background-image: url("../assets/images/3_dogs_running_comp.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-color: #464646; }
 
 .walk {
   padding-top: 20px;
@@ -134,10 +129,16 @@ section {
   color: #18B89D;
   text-align: right; }
 
+.overview1 {
+  text-align: right; }
+  .overview1 p {
+    line-height: 30px;
+    font-size: 18px; }
+
 .parallax1 {
   height: 700px;
   width: 100%;
-  background-image: url("../assets/images/walk_in_fields.jpg");
+  background-image: url("../assets/images/walk_in_fields_comp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed; }
@@ -154,11 +155,13 @@ section {
       color: #AC1439; }
 
 .parallax2 {
-  height: 900px;
-  background-image: url("../assets/images/garden2.jpg");
+  height: 90vh;
+  background-image: url("../assets/images/garden2.comp.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-color: #464646; }
 
 .content2 {
   text-align: center;
@@ -175,17 +178,16 @@ section {
     background-color: #FFF; }
 
 .parallax3 {
-  height: 700px;
-  width: 100%;
-  background-image: url("../assets/images/dal_point.png");
+  height: 70vh;
+  background-image: url("../assets/images/dal_point_comp.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-color: #464646; }
 
 .content3 {
-  text-align: center;
-  height: 50%;
-  width: 100%; }
+  text-align: center; }
   .content3 h1 {
     text-align: center;
     color: #AC1439;
@@ -201,12 +203,13 @@ section {
     background-color: #FFF; }
 
 .parallax4 {
-  height: 700px;
-  width: 100%;
-  background-image: url("../assets/images/rob_and_boy.jpg");
+  height: 80vh;
+  background-image: url("../assets/images/rob_and_boy_comp.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed; }
+  background-attachment: fixed;
+  background-color: #464646; }
 
 .content4 {
   text-align: center;
@@ -221,30 +224,45 @@ section {
 
 #hero {
   height: 100vh;
-  background-image: url("../assets/images/Rob_with_pals.jpg");
+  background-image: url("../assets/images/Rob_with_pals_comp.jpg");
+  background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  margin: auto; }
-  #hero h2 {
-    font-size: 36px;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646; }
+
+#wordage {
+  padding-top: 110px; }
+  #wordage h2 {
+    font-size: 30px;
     color: #FFF;
     font-family: goldenratio_demo;
-    margin-left: 55%;
-    width: 500px;
-    height: 400px;
-    padding-top: 120px; }
+    margin-left: 55%; }
 
 #overview-text {
-  margin-right: 20px;
-  padding-top: 40px;
-  text-align: center;
-  max-width: 80%; }
+  padding-bottom: 40px;
+  text-align: center; }
+  #overview-text h2 {
+    padding-top: 30px;
+    font-family: goldenratio_demo;
+    color: #AC1439; }
 
 #overview-image {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   padding-left: 50px;
   margin-right: 60px; }
+  #overview-image img {
+    height: 400px; }
+
+#walks_image {
+  padding-top: 40px; }
+
+#walks_text {
+  text-align: center; }
+  #walks_text h2 {
+    font-family: goldenratio_demo;
+    color: #AC1439; }
 
 #boarding {
   margin: auto;
@@ -260,36 +278,39 @@ section {
     background-color: #FFF; }
 
 #db, #ovb {
-  margin-top: 30px;
   text-align: center;
   border: 1px #18B89D;
   border-style: solid;
   border-width: 2px;
   border-color: #18B89D;
   border-radius: 50px;
-  padding: 15px; }
+  margin: 20px;
+  padding: 15px;
+  margin: auto; }
   #db img, #ovb img {
-    margin-top: 20px; }
+    margin: auto; }
+
+#ovb {
+  margin-top: 20px; }
+
+#forms, #next_steps {
+  margin: auto;
+  border: 1px solid black;
+  border-radius: 10%;
+  border-color: #18B89D; }
+  #forms h2, #next_steps h2 {
+    text-align: center; }
 
 #next_steps {
   text-align: justify;
-  border: 1px solid black;
-  border-radius: 10%;
-  padding: 20px;
-  border-color: #18B89D;
+  padding-bottom: 26px;
   margin-right: 50px;
   margin-left: 50px; }
-  #next_steps h2 {
-    text-align: center; }
 
 #forms {
-  border: 1px solid black;
-  border-radius: 10%;
-  padding: 20px;
-  border-color: #18B89D;
-  margin-left: 50px; }
+  padding-bottom: 20px; }
 
-#Prices h1 {
+#prices h1 {
   text-align: center;
   color: #AC1439;
   padding-top: 20px;
@@ -347,5 +368,21 @@ footer {
 @media only screen and (max-device-width: 900px) {
   .parallax .parallax1 .parallax2 .parallax3 .parallax4 {
     background-attachment: scroll; } }
+@media only screen and (max-width: 767px) {
+  #hero h2 {
+    font-size: 20px;
+    color: #FFF;
+    font-family: goldenratio_demo; } }
+@media only screen and (max-width: 767px) {
+  p {
+    font-size: 16px; } }
+@media only screen and (max-width: 767px) {
+  #hero {
+    background-image: url("../assets/images/Rob_with_pals_mobile.png"); } }
+@media only screen and (max-width: 767px) {
+  #wordage {
+    font-size: 16px;
+    color: black;
+    font-family: goldenratio_demo; } }
 
 /*# sourceMappingURL=style.css.map */

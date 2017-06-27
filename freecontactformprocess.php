@@ -51,6 +51,11 @@ if(isset($_POST['Email_Address'])) {
 		!isset($_POST['Season']) ||
 		!isset($_POST['Entire']) ||
 		!isset($_POST['Behaviour']) ||
+		!isset($_POST['Car']) ||
+		!isset($_POST['Travel']) ||
+		!isset($_POST['Off_Lead']) ||
+		!isset($_POST['Recall']) ||
+		!isset($_POST['Collection']) ||
     !isset($_POST['Add_Info']) ||
     !isset($_POST['AntiSpam'])
   ) {
@@ -76,6 +81,11 @@ if(isset($_POST['Email_Address'])) {
 	$season = $_POST['Season']; // required
 	$entire = $_POST['Entire']; // required
 	$behaviour = $_POST['Behaviour']; // required
+	$car = $_POST['Car']; // required
+	$travel = $_POST['Travel']; // required
+	$off_lead = $_POST['Off_Lead']; // required
+	$recall = $_POST['Recall']; // required
+	$collection = $_POST['Collection']; // required
 	$add_info = $_POST['Add_Info']; // required
 	$antispam = $_POST['AntiSpam']; // required
 
@@ -137,20 +147,26 @@ if(isset($_POST['Email_Address'])) {
     $error_message .= 'Please confirm yes or no.<br />';
   }
   if(strlen($behaviour) < 2 ) {
-    $error_message .= 'Please state N/A if not applicable<br />';
+    $error_message .= 'Please state N/A if not applicable.<br />';
   }
-
-
-
-
-
-
-
+  if(strlen($car) < 2 ) {
+    $error_message .= 'Please state yes or no.<br />';
+  }
+  if(strlen($travel) < 2 ) {
+    $error_message .= 'Please state yes or no.<br />';
+  }
+  if(strlen($off_lead) < 2 ) {
+    $error_message .= 'Please state yes or no.<br />';
+  }
+  if(strlen($recall) < 2 ) {
+    $error_message .= 'Please state yes or no.<br />';
+  }
+  if(strlen($collection) < 2 ) {
+    $error_message .= 'Please state n/a if there are no instructions.<br />';
+  }
   if(strlen($add_info) < 2) {
     $error_message .= 'Please write N/A if there is no further information that we need to know about.<br />';
   }
-
-
   if($antispam <> $antispam_answer) {
 	$error_message .= 'The Anti-Spam answer you entered is not correct.<br />';
   }
@@ -182,7 +198,13 @@ if(isset($_POST['Email_Address'])) {
 	$email_message .= "Neutered: ".clean_string($neutered)."\r\n";
 	$email_message .= "Agree to ensure dog is not in season in our care: ".clean_string($season)."\r\n";
 	$email_message .= "Accept risk with entire male: ".clean_string($entire)."\r\n";
-	$email_message .= "Additional Information: ".clean_string($add_info)."\r\n";
+	$email_message .= "Behavioural notes: ".clean_string($behaviour)."\r\n";
+	$email_message .= "Allowed to travel in car: ".clean_string($car)."\r\n";
+	$email_message .= "Travels well in car? : ".clean_string($travel)."\r\n";
+	$email_message .= "Allowed off-lead: ".clean_string($off_lead)."\r\n";
+	$email_message .= "Recall good? : ".clean_string($recall)."\r\n";
+	$email_message .= "Walks - Collection details: ".clean_string($collection)."\r\n";
+  $email_message .= "Additional Information: ".clean_string($add_info)."\r\n";
 
 $headers = 'From: '.$email_from."\r\n".
 'Reply-To: '.$email_from."\r\n" .
