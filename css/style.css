@@ -94,7 +94,8 @@ section {
   section:last-of-type {
     border-bottom: 0; }
   section h2 {
-    font-size: 24px; }
+    font-size: 24px;
+    color: #AC1439; }
 
 .top_home {
   width: 100%;
@@ -147,8 +148,7 @@ section {
   .boarding div {
     background-color: #FFF; }
     .boarding div h2 {
-      text-align: center;
-      color: #AC1439; }
+      text-align: center; }
 
 .parallax2 {
   height: 90vh;
@@ -191,8 +191,7 @@ section {
     padding-bottom: 20px; }
   .content3 h2 {
     padding-bottom: 20px;
-    font-family: goldenratio_demo;
-    color: #AC1439; }
+    font-family: goldenratio_demo; }
   .content3 p {
     color: #777; }
   .content3 div {
@@ -262,7 +261,7 @@ section {
   margin: auto;
   padding-top: 60px; }
   #boarding p {
-    font-size: 20px; }
+    font-size: 18px; }
   #boarding h2, #boarding h1 {
     font-family: goldenratio_demo;
     color: #AC1439;

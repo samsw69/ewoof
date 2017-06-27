@@ -15,10 +15,6 @@ $white: #FFF;
 $font: oxygen_light;
 $heading: goldenratio_demo;
 
-// * {
-//   font-family: inherit;
-// }
-
 body, p {
     font-size: 18px;
     font-family: $font;
@@ -131,6 +127,7 @@ section {
   }
   h2 {
     font-size: 24px;
+    color: $brand-secondary;
   }
 }
 .top_home {
@@ -197,7 +194,7 @@ section {
     background-color: $white ;
     h2 {
       text-align: center;
-      color: $brand-secondary;
+      // color: $brand-secondary;
     }
   }
 }
@@ -254,7 +251,7 @@ section {
        h2 {
          padding-bottom: 20px;
          font-family: goldenratio_demo;
-         color: $brand-secondary;
+        //  color: $brand-secondary;
        }
      p {
        color: #777;
@@ -308,8 +305,8 @@ section {
   h2 {
     font-size: 30px;
     color: $white;
-    font-family: goldenratio_demo;
-      margin-left: 55%;
+    font-family: $heading;
+    margin-left: 55%;
     }
   }
 
@@ -318,8 +315,8 @@ section {
     text-align: center;
     h2 {
       padding-top: 30px;
-      font-family: goldenratio_demo;
-      color: #AC1439
+      font-family: $heading;
+      color: $brand-secondary;
     }
   }
 
@@ -347,10 +344,10 @@ section {
   margin: auto;
   padding-top: 60px;
   p {
-    font-size: 20px;
+    font-size: 18px;
   }
   h2, h1 {
-  font-family: goldenratio_demo;
+  font-family: $heading;
   color: $brand-secondary;
   padding-bottom: 20px;
   text-align: center;
@@ -490,35 +487,21 @@ footer {
 
 @media only screen and (max-width: 767px) {
   #hero {
-  h2 {
-    font-size: 20px;
-    color: $white;
-    font-family: goldenratio_demo;
+    h2 {
+      font-size: 20px;
+      color: $white;
+      font-family: goldenratio_demo;
+    }
+    p {
+      font-size: 16px;
+    }
+    #wordage {
+      font-size: 16px;
+      color: black;
+      font-family: goldenratio_demo;
+    }
   }
-  p {
-    font-size: 16px;
-  }
-  #wordage {
-    font-size: 16px;
-    color: black;
-    font-family: goldenratio_demo;
-      }
 }
-}
-
-// @media only screen and (max-width: 767px) {
-//   p {
-//     font-size: 16px;
-//   }
-// }
-
-// @media only screen and (max-width: 767px) {
-// #wordage {
-//   font-size: 16px;
-//   color: black;
-//   font-family: goldenratio_demo;
-//     }
-// }
 
 @media screen and (max-device-width: 414px) {
   /* Insert styles here */ }
