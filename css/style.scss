@@ -18,6 +18,7 @@ $heading: goldenratio_demo;
 body, p {
     font-size: 18px;
     font-family: $font;
+    color: #777;
 }
 
 a {
@@ -53,7 +54,6 @@ ol, ul, li {
   line-height: 32px;
 }
 header {
-  // z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -130,6 +130,14 @@ section {
     color: $brand-secondary;
   }
 }
+
+footer {
+  background-color: rgba(20, 20, 20, 1);
+  padding: 10px 0;
+  text-align: center;
+  color: $white;
+}
+
 .top_home {
   width: 100%;
   height: 100%;
@@ -148,7 +156,6 @@ section {
   }
 }
 
-
 .parallax {
   height: 80vh;
   background-image: url('../assets/images/3_dogs_running_comp.jpg');
@@ -159,20 +166,13 @@ section {
   background-color:#464646;
  }
 
- .walk {
-  padding-top: 20px;
-  background-color: $white;
-  color: $brand-color;
+.overview1 {
   text-align: right;
+  p {
+    line-height: 30px;
+    font-size: 18px;
   }
-
-  .overview1 {
-    text-align: right;
-    p {
-      line-height: 30px;
-      font-size: 18px;
-    }
-  }
+}
 
 .parallax1 {
   height: 700px;
@@ -180,24 +180,8 @@ section {
   background-image: url("../assets/images/walk_in_fields_comp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   background-attachment: scroll;
  }
-
- .boarding {
-   text-align: center;
-   height: 50%;
-   p {
-     color: #777;
-   }
-   div {
-    background-color: $white ;
-    h2 {
-      text-align: center;
-      // color: $brand-secondary;
-    }
-  }
-}
 
 .parallax2 {
   height: 90vh;
@@ -205,7 +189,6 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   background-attachment: scroll;
   background-color:#464646;
  }
@@ -213,21 +196,20 @@ section {
 .content2 {
  text-align: center;
  height: 50%;
- h1 {
-   text-align: center;
-   color: $brand-secondary;
-   padding-top: 20px;
-   color: $black;
-   font-family: goldenratio_demo;
-   }
- p {
-   color: #777;
- }
- div {
-  background-color: $white ;
+  h1 {
+     text-align: center;
+     color: $brand-secondary;
+     padding-top: 20px;
+     color: $black;
+     font-family: $heading;
+  }
+  p {
+     color: #777;
+  }
+  div {
+    background-color: $white ;
   }
 }
-
 
 .parallax3 {
   height: 70vh;
@@ -235,31 +217,29 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   background-attachment: scroll;
   background-color:#464646;
- }
+}
 
-   .content3 {
-     text-align: center;
-     h1 {
-       text-align: center;
-       color: $brand-secondary;
-       font-family: goldenratio_demo;
-       padding-bottom: 20px;
-       }
-       h2 {
-         padding-bottom: 20px;
-         font-family: goldenratio_demo;
-        //  color: $brand-secondary;
-       }
-     p {
-       color: #777;
-     }
-     div {
-      background-color: $white ;
-      }
-    }
+.content3 {
+  text-align: center;
+  h1 {
+   text-align: center;
+   color: $brand-secondary;
+   font-family: $heading;
+   padding-bottom: 20px;
+  }
+  h2 {
+   padding-bottom: 20px;
+   font-family: $heading;
+  }
+  p {
+   color: #777;
+  }
+  div {
+  background-color: $white ;
+  }
+}
 
 .parallax4 {
   height: 80vh;
@@ -267,19 +247,18 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  // background-attachment: fixed;
   background-attachment: scroll;
   background-color:#464646;
  }
 
- .content4 {
-   text-align: center;
-   height: 50%;
-   p {
-     color: #777;
-   }
-   div {
-    background-color: $white ;
+.content4 {
+ text-align: center;
+ height: 50%;
+ p {
+   color: #777;
+ }
+ div {
+  background-color: $white ;
     h2 {
       text-align: center;
       color: $brand-secondary;
@@ -287,7 +266,10 @@ section {
   }
 }
 
-
+#logo {
+text-align: left;
+vertical-align: middle;
+}
 
 #hero {
   height: 100vh;
@@ -299,7 +281,6 @@ section {
   background-color:#464646;
   }
 
-
 #wordage {
     padding-top: 110px;
   h2 {
@@ -310,35 +291,34 @@ section {
     }
   }
 
-  #overview-text {
-    padding-bottom: 40px;
-    text-align: center;
-    h2 {
-      padding-top: 30px;
-      font-family: $heading;
-      color: $brand-secondary;
-    }
-  }
-
-  #overview-image {
-    padding-top: 30px;
-    padding-bottom: 30px;
-    padding-left: 50px;
-    margin-right: 60px;
+#overview-image {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 50px;
+  margin-right: 60px;
 }
 
-  #walks_image {
-    padding-top: 40px;
+#overview-text {
+  padding-bottom: 40px;
+  text-align: center;
+  h2 {
+    padding-top: 30px;
+    font-family: $heading;
+    color: $brand-secondary;
   }
+}
 
-
-  #walks_text {
-    text-align: center;
-    h2 {
-      font-family: goldenratio_demo;
-      color: #AC1439
-    }
+#walks_text {
+  text-align: center;
+  h2 {
+    font-family: $heading;
+    color: #AC1439
   }
+}
+
+#walks_image {
+  padding-top: 40px;
+}
 
 #boarding{
   margin: auto;
@@ -354,7 +334,7 @@ section {
   }
   div {
    background-color: $white ;
- }
+  }
 }
 
 #db, #ovb {
@@ -376,6 +356,15 @@ section {
   margin-top: 20px;
 }
 
+#prices {
+  h1 {
+    text-align: center;
+    color: $brand-secondary;
+    padding-top: 20px;
+    font-family: $heading;
+  }
+}
+
 #forms, #next_steps {
   margin: auto;
   border: 1px solid black;
@@ -388,28 +377,17 @@ section {
 
 #next_steps {
   text-align: justify;
-  // border: 1px solid black;
-  // border-radius: 10%;
   padding-bottom: 26px;
-  // border-color: $brand-color;
   margin-right: 50px;
   margin-left: 50px;
-
 }
 
 #forms {
   padding-bottom: 20px;
 }
 
-
-
-#prices {
-  h1 {
-    text-align: center;
-    color: $brand-secondary;
-    padding-top: 20px;
-    font-family: goldenratio_demo;
-    }
+#peace {
+  margin-top: 20px;
 }
 
 #contact {
@@ -419,9 +397,8 @@ section {
     padding-bottom: 0px;
   }
   h2 {
-    font-family: oxygen_light;
+    font-family: $font;
     color: black;
-    // padding-bottom: 30px;
     font-size: 22px;
     text-align: center;
   }
@@ -430,31 +407,9 @@ section {
     line-height: 30px;
   }
 }
+
 #logos {
   padding-top: 30px;
-}
-#peace {
-  margin-top: 20px;
-}
-
-#logo {
-text-align: left;
-vertical-align: middle;
-
-}
-footer {
-  background-color: rgba(20, 20, 20, 1);
-  padding: 10px 0;
-  text-align: center;
-  color: $white;
-}
-
-.content {
-  padding-top: 100px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 @media only screen and (max-width: 575px) {
@@ -478,19 +433,12 @@ footer {
   }
 }
 
-/* Turn off parallax scrolling for tablets and phones. */
-// @media only screen and (max-device-width: 900px) {
-//     .parallax .parallax1 .parallax2 .parallax3 .parallax4  {
-//         background-attachment: scroll;
-//     }
-// }
-
 @media only screen and (max-width: 767px) {
   #hero {
     h2 {
       font-size: 20px;
       color: $white;
-      font-family: goldenratio_demo;
+      font-family: $heading;
     }
     p {
       font-size: 16px;
@@ -498,13 +446,10 @@ footer {
     #wordage {
       font-size: 16px;
       color: black;
-      font-family: goldenratio_demo;
+      font-family: $heading;
     }
   }
 }
-
-@media screen and (max-device-width: 414px) {
-  /* Insert styles here */ }
 
 @media screen and (max-device-width: 320px) and (max-device-height: 568px) {
   img {
