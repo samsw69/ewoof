@@ -15,9 +15,9 @@ $white: #FFF;
 $font: oxygen_light;
 $heading: goldenratio_demo;
 
-* {
-  font-family: inherit;
-}
+// * {
+//   font-family: inherit;
+// }
 
 body, p {
     font-size: 18px;
@@ -57,7 +57,7 @@ ol, ul, li {
   line-height: 32px;
 }
 header {
-  z-index: 4;
+  // z-index: 4;
   position: fixed;
   top: 0;
   left: 0;
@@ -157,9 +157,9 @@ section {
   background-image: url('../assets/images/3_dogs_running_comp.jpg');
   background-position: center center;
   background-repeat: no-repeat;
+  background-attachment: scroll;
   background-size: cover;
-  background-attachment: fixed;
-   background-color:#464646;
+  background-color:#464646;
  }
 
  .walk {
@@ -183,7 +183,8 @@ section {
   background-image: url("../assets/images/walk_in_fields_comp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  background-attachment: scroll;
  }
 
  .boarding {
@@ -207,7 +208,8 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  background-attachment: scroll;
   background-color:#464646;
  }
 
@@ -236,7 +238,8 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  background-attachment: scroll;
   background-color:#464646;
  }
 
@@ -267,7 +270,8 @@ section {
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
+  // background-attachment: fixed;
+  background-attachment: scroll;
   background-color:#464646;
  }
 
@@ -293,10 +297,11 @@ section {
   background-image: url('../assets/images/Rob_with_pals_comp.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: scroll;
   background-size: cover;
   background-color:#464646;
   }
+
 
 #wordage {
     padding-top: 110px;
@@ -307,8 +312,6 @@ section {
       margin-left: 55%;
     }
   }
-
-
 
   #overview-text {
     padding-bottom: 40px;
@@ -325,9 +328,6 @@ section {
     padding-bottom: 30px;
     padding-left: 50px;
     margin-right: 60px;
-    img {
-      height: 400px;
-  }
 }
 
   #walks_image {
@@ -347,7 +347,7 @@ section {
   margin: auto;
   padding-top: 60px;
   p {
-    font-size: 2opx;
+    font-size: 20px;
   }
   h2, h1 {
   font-family: goldenratio_demo;
@@ -482,11 +482,11 @@ footer {
 }
 
 /* Turn off parallax scrolling for tablets and phones. */
-@media only screen and (max-device-width: 900px) {
-    .parallax .parallax1 .parallax2 .parallax3 .parallax4  {
-        background-attachment: scroll;
-    }
-}
+// @media only screen and (max-device-width: 900px) {
+//     .parallax .parallax1 .parallax2 .parallax3 .parallax4  {
+//         background-attachment: scroll;
+//     }
+// }
 
 @media only screen and (max-width: 767px) {
   #hero {
@@ -495,19 +495,48 @@ footer {
     color: $white;
     font-family: goldenratio_demo;
   }
-}
-}
-
-@media only screen and (max-width: 767px) {
   p {
     font-size: 16px;
   }
+  #wordage {
+    font-size: 16px;
+    color: black;
+    font-family: goldenratio_demo;
+      }
+}
 }
 
-@media only screen and (max-width: 767px) {
-#wordage {
-  font-size: 16px;
-  color: black;
-  font-family: goldenratio_demo;
-    }
+// @media only screen and (max-width: 767px) {
+//   p {
+//     font-size: 16px;
+//   }
+// }
+
+// @media only screen and (max-width: 767px) {
+// #wordage {
+//   font-size: 16px;
+//   color: black;
+//   font-family: goldenratio_demo;
+//     }
+// }
+
+@media screen and (max-device-width: 414px) {
+  /* Insert styles here */ }
+
+@media screen and (max-device-width: 320px) and (max-device-height: 568px) {
+  img {
+    max-width:300px;
+  }
+}
+
+@media screen and (max-device-width: 375px) and (max-device-height: 667px) {
+  img {
+    max-width:300px;
+  }
+}
+
+@media screen and (max-device-width: 414px) and (max-device-height: 776px) {
+  img {
+    max-width:300px;
+  }
 }
