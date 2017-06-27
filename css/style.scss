@@ -151,12 +151,9 @@ section {
   }
 }
 
-// @media only screen and (max-width: 767px) {
-
 
 .parallax {
   height: 80vh;
-  // width: 100%;
   background-image: url('../assets/images/3_dogs_running_comp.jpg');
   background-position: center center;
   background-repeat: no-repeat;
@@ -164,12 +161,6 @@ section {
   background-attachment: fixed;
    background-color:#464646;
  }
-
- // @media only screen and (max-width: 767px) {
- //   .parallax {
- //     background-image: url('../assets/images/3_dogs_running_mob.jpg');
- //   }
- // }
 
  .walk {
   padding-top: 20px;
@@ -241,7 +232,6 @@ section {
 
 .parallax3 {
   height: 70vh;
-  // width: 100%;
   background-image: url("../assets/images/dal_point_comp.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -251,10 +241,7 @@ section {
  }
 
    .content3 {
-    //  margin: auto;
      text-align: center;
-    //  height: 50%;
-    //  width: 100%;
      h1 {
        text-align: center;
        color: $brand-secondary;
@@ -276,7 +263,6 @@ section {
 
 .parallax4 {
   height: 80vh;
-  // width: 100%;
   background-image: url("../assets/images/rob_and_boy_comp.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -319,18 +305,14 @@ section {
     color: $white;
     font-family: goldenratio_demo;
       margin-left: 55%;
-      // width: 500px;
-      // height: 400px;
     }
   }
 
 
 
   #overview-text {
-    // margin-right: 20px;
     padding-bottom: 40px;
     text-align: center;
-    // max-width: 80%;
     h2 {
       padding-top: 30px;
       font-family: goldenratio_demo;
@@ -363,9 +345,7 @@ section {
 
 #boarding{
   margin: auto;
- // border: 1px $brand-secondary;
   padding-top: 60px;
-  // margin-top: 80px;
   p {
     font-size: 2opx;
   }
@@ -381,7 +361,6 @@ section {
 }
 
 #db, #ovb {
-  // margin-top: 30px;
   text-align: center;
   border: 1px $brand-color;
   border-style: solid;
@@ -404,9 +383,7 @@ section {
   margin: auto;
   border: 1px solid black;
   border-radius: 10%;
-  // padding: 20px;
   border-color: $brand-color;
-  // margin-left: 50px;
   h2 {
     text-align: center;
   }
@@ -517,10 +494,6 @@ footer {
     font-size: 20px;
     color: $white;
     font-family: goldenratio_demo;
-      // margin-left: 55%;
-      // width: 500px;
-      // height: 400px;
-      // padding-top: 120px;
   }
 }
 }
@@ -531,20 +504,10 @@ footer {
   }
 }
 
-// @media only screen and (max-width: 767px) {
-//   #hero {
-//     background-image: url('../assets/images/Rob_with_pals_mobile.png');
-//   }
-// }
-
 @media only screen and (max-width: 767px) {
 #wordage {
   font-size: 16px;
   color: black;
   font-family: goldenratio_demo;
-      // margin-left: 55%;
-      // width: 500px;
-      // height: 400px;
-      // padding-top: 120px;
     }
 }
